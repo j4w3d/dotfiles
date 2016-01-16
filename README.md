@@ -104,6 +104,17 @@ Your `~/.vimrc.bundles.local` might look like this:
     Plug 'Lokaltog/vim-powerline'
     Plug 'stephenmckinney/vim-solarized-powerline'
 
+
+Quick File Add
+-------------
+
+    cd ~/dotfiles
+    vim gitconfig.local
+    vim vimrc.local
+    rcup
+
+last command will create `~/.gitconfig.local` & `~/.vimrc.local` symlink.
+
 zsh Configurations
 ------------------
 
