@@ -1,3 +1,5 @@
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function

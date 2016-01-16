@@ -371,7 +371,8 @@ function! <SID>BufcloseCloseIt()
 endfunction
 
 """"""""""""""""""""""""""""""""""" SONU Customization
-"""""""""""""""""" source: https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven """""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""" source: https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven
+"""""""""""""""""""""""""""""""""""
 
 " Enable folding
 set foldmethod=indent

@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#
+
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.0.0-p195/bin:$PATH"
+
+# go
+export GOPATH=$HOME/Dev/go
+export PATH=$PATH:$GOPATH/bin
+
+# jvm
+export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
+
+# dotfiles
+EXCLUDES="README.md LICENSE"
+DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
