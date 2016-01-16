@@ -17,9 +17,6 @@ Clone onto your laptop:
 
     git clone git://github.com/sahilsk/dotfiles.git
 
-(Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
-
 Install [rcm](https://github.com/thoughtbot/rcm):
 
     brew tap thoughtbot/formulae
@@ -111,7 +108,10 @@ Quick File Add
     cd ~/dotfiles
     vim gitconfig.local
     vim vimrc.local
+    # now sync your ~/  directory with dotfiles
     rcup
+
+
 
 last command will create `~/.gitconfig.local` & `~/.vimrc.local` symlink.
 
