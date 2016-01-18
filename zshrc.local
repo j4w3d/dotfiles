@@ -1,0 +1,3 @@
+
+# variables
+[[ -f ~/.bash/variables ]] && source ~/.bash/variables
