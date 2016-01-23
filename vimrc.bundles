@@ -28,7 +28,6 @@ call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pbrisbin/vim-mkdir'
@@ -38,7 +37,6 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
@@ -46,7 +44,25 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
+Plug 'nvie/vim-flake8'
+" => File Browsing
+Plug 'scrooloose/nerdtree'
+map <C-b> :NERDTreeToggle<CR>
+" => use tab for file browsing
+Plug 'jistr/vim-nerdtree-tabs'
+" => ctrlP search everything
+Plug 'kien/ctrlp.vim'
+" => git integration
+Plug 'tpope/vim-fugitive'
+" => Auto indent
+Plug 'vim-scripts/indentpython.vim'
+" => Powerline
+Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Manage folding
+Plug 'tmhedberg/SimpylFold'
 
+
+" include vimrc.local file
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif

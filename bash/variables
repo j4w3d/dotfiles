@@ -2,7 +2,7 @@
 #
 #
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.0.0-p195/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.0.0-p195/bin:~/bin:$PATH"
 
 # go
 export GOPATH=$HOME/gowork

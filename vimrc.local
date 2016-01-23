@@ -380,65 +380,8 @@ set foldlevel=99
 
 " Enable folding with the spacebar
 nnoremap <space> za
-" Manage folding
-Plug 'tmhedberg/SimpylFold'
 
-" PEP8 idendentation
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-
-" => Auto indent
-Plug 'vim-scripts/indentpython.vim'
-
-" Flagging unncessary whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-
-" => UTF-8 support
-set encoding=utf-8
-
-
-" => Python auto-complete
-"Plug 'Valloric/YouCompleteMe'
-
-" => Syntax Checking/Highlighting
-Plug 'scrooloose/syntastic'
-
-" => PEP8 checking
-Plug 'nvie/vim-flake8'
-
-" => make sure code look pretty
-let python_highlight_all=1
-syntax on
-
-" => File Browsing
-Plug 'scrooloose/nerdtree'
-
-" => use tab for file browsing
-Plug 'jistr/vim-nerdtree-tabs'
-
-" => ctrlP search everything
-Plug 'kien/ctrlp.vim'
-
-" => line number
-set nu
-
-" => git integration
-Plug 'tpope/vim-fugitive'
-
-" => Powerline
-Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " => System clipboard
 set clipboard=unnamed
