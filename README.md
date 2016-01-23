@@ -47,6 +47,12 @@ You can safely run `rcup` multiple times to update:
 You should run `rcup` after pulling a new version of the repository to symlink
 any new files in the repository.
 
+
+Installing vim plugin
+------------------------
+
+Open vimrc.bundle file and put `Plug`. It uses [vim-plug](https://github.com/junegunn/vim-plug)
+
 Make your own customizations
 ----------------------------
 
