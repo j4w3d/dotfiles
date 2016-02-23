@@ -59,7 +59,10 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Manage folding
 Plug 'tmhedberg/SimpylFold'
-
+" => extending lines (e.g underlined titles)
+Plug 'drmikehenry/vim-extline'
+" => intensely orgasmic commenting
+Plug 'scrooloose/nerdcommenter'
 " include vimrc.local file
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
