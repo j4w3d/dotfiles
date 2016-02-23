@@ -61,7 +61,7 @@ Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'tmhedberg/SimpylFold'
 " => extending lines (e.g underlined titles)
 Plug 'drmikehenry/vim-extline'
-" => intensely orgasmic commenting
+" => for intensely orgasmic commenting
 Plug 'scrooloose/nerdcommenter'
 " include vimrc.local file
 if filereadable(expand("~/.vimrc.bundles.local"))
