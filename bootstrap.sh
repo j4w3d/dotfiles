@@ -26,6 +26,15 @@ else
     sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
+virtualenv_version=`virtualenv --version`
+if [ $? -ne '0' ]
+then
+    echo "installing virtualenv: sudo pip install virtualenvwrapper --upgrade --ignore-installed six"
+    sudo pip install virtualenvwrapper --upgrade --ignore-installed six
+else
+    echo "virtualenv:" $virtualenv_version
+fi
+
 chsh -s /bin/zsh
 
 
