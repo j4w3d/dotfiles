@@ -11,6 +11,13 @@ export PATH=$PATH:$GOPATH/bin
 # jvm
 export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
 
+
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 # dotfiles
 EXCLUDES="README.md LICENSE"
 DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
+
+
