@@ -21,3 +21,9 @@ EXCLUDES="README.md LICENSE"
 DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
 
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# aws
+export AWS_DEFAULT_PROFILE=aws_ro
