@@ -62,7 +62,9 @@ then
     gem install bundler
 
 else
-    echo "rbenv:" $rbenv_version
+    echo "updating rbenv"
+    brew upgrade rbenv ruby-build
+    echo "rbenv:" `rbenv --version`
 fi
 
 
