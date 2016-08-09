@@ -25,5 +25,9 @@ DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+
+# gvm
+source $HOME/.gvm/scripts/gvm
+
 # aws
 export AWS_DEFAULT_PROFILE=aws_ro

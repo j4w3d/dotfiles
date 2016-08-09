@@ -64,7 +64,22 @@ then
 else
     echo "updating rbenv"
     brew upgrade rbenv ruby-build
-    echo "rbenv:" `rbenv --version`
+    echo "rbenv: " $rbenv_version
+fi
+
+
+
+## Install gvm
+
+gvm_version=`gvm version`
+if [ $? -ne '0' ]
+then
+    echo "installing gvm"
+    bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+    source ~/.gvm/scripts/gvm
+
+else
+    echo "gvm: " $gvm_version
 fi
 
 
