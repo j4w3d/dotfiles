@@ -31,3 +31,7 @@ source $HOME/.gvm/scripts/gvm
 
 # aws
 export AWS_DEFAULT_PROFILE=aws_ro
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

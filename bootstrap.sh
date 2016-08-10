@@ -90,3 +90,20 @@ else
 fi
 
 
+## Install nvm
+
+nvm_version=`nvm --version`
+if [ $? -ne '0' ]
+then
+    echo "installing nvm"
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    nvm install --lts
+    nvm use --lts
+else
+    echo "nvm: " $nvm_version
+    echo "node" `node --version`
+fi
+
+
