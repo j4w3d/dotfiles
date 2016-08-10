@@ -77,6 +77,13 @@ then
     echo "installing gvm"
     bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
     source ~/.gvm/scripts/gvm
+    xcode-select --install
+    brew update
+    brew install mercurial
+    gvm install go1.4 -B
+    gvm use go1.4 
+    gvm install go1.6.3
+    gvm use go1.6.3
 
 else
     echo "gvm: " $gvm_version
