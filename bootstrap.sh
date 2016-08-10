@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+## Install fonts
+
+cp ./fonts/*  $HOME/Library/Fonts
+
 ## Install brew
 brew_version=`brew -v`
 if [ $? -ne '0' ]
