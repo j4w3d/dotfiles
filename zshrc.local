@@ -79,5 +79,8 @@ plugins=(git)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
+
 # variables
 [[ -f ~/.bash/variables ]] && source ~/.bash/variables

@@ -1,1 +1,0 @@
-/Users/sonu.meena/dotfiles/./zsh/configs/keybindings.zsh
