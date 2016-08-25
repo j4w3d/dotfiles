@@ -112,3 +112,11 @@ else
 fi
 
 
+
+
+### Extras
+
+echo "python linting tool: flake8"
+echo "Read more hre: https://github.com/nvie/vim-flake8"
+pip install flake8
+

@@ -8,8 +8,8 @@ export ZSH=/Users/`whoami`/dotfiles/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="honukai"
-ZSH_THEME="nodeys"
+ZSH_THEME="honukai"
+#ZSH_THEME="nodeys"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -88,3 +88,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+export NVM_DIR="/Users/sonu.meena/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
